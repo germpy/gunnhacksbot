@@ -15,8 +15,8 @@ class Shenanigans(commands.Cog):
 	async def capitalize(self, ctx, arg="​​​no text given to capitalize"):
 		await ctx.send(arg.upper())
 
-	@commands.command()
-	async def ping(ctx):
+	@commands.command(name = "ping")
+	async def ping(self, ctx):
 		await ctx.send("pong!")
 
 	@commands.command(name="scream")
