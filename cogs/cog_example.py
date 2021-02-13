@@ -12,7 +12,7 @@ class DevCommands(commands.Cog, name='Developer Commands'):
 		'''
 		The default check for this cog whenever a command is used. Returns True if the command is allowed.
 		'''
-		return ctx.author.id == self.bot.author_id
+		return ctx.author.id in self.bot.author_ids
 
 	@commands.command(  # Decorator to declare where a command is.
 		name='reload',  # Name of the command, defaults to function name.
@@ -52,6 +52,7 @@ class DevCommands(commands.Cog, name='Developer Commands'):
 		'''
 		Loads a cog.
 		'''
+
 		try:
 
 			self.bot.load_extension(cog)
@@ -65,6 +66,7 @@ class DevCommands(commands.Cog, name='Developer Commands'):
 		'''
 		Returns a list of all enabled commands.
 		'''
+
 		base_string = "```css\n"  # Gives some styling to the list (on pc side)
 		base_string += "\n".join([str(cog) for cog in self.bot.extensions])
 		base_string += "\n```"
