@@ -42,7 +42,7 @@ class Eng(commands.Cog):
 	async def english(self, ctx, arg):
 		translator = Translator(to_lang = "English")
 		translation = translator.translate(arg)
-		await ctx.send(arg + "in English is " + translation)
+		await ctx.send(translation)
 
 def setup(bot): 
 	bot.add_cog(TranslateCog(bot))
