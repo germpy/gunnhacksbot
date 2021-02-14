@@ -38,7 +38,8 @@ extensions = [
 	'cogs.cog_example',
 	'cogs.translate_cog',
 	'cogs.shenanigans',
-	'cogs.quotes'
+	'cogs.quotes',
+	'cogs.game_cog'
 ]
 
 if __name__ == '__main__':  # Ensures this is the file being ran
