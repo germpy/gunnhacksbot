@@ -140,6 +140,19 @@ dotenv = ["python-dotenv"]
 
 [[package]]
 category = "main"
+description = "Fetches popular quotes and quote of the day from goodreads.com website"
+name = "goodreads-quotes"
+optional = false
+python-versions = "*"
+version = "0.1.0"
+
+[package.dependencies]
+lxml = "*"
+requests = "*"
+six = "*"
+
+[[package]]
+category = "main"
 description = "Free Google Translate API for Python. Translates totally free of charge."
 name = "googletrans"
 optional = false
@@ -518,7 +531,7 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "6f4d7f476007254933fb5b5dcd5884600b6e9c45d94495359aa4806c5fc4b14d"
+content-hash = "6cdd6b239ca025005a196467525d52d5017507175987af468d6a6ec9ac37c9c6"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -583,6 +596,10 @@ filelock = [
 flask = [
     {file = "Flask-1.1.2-py2.py3-none-any.whl", hash = "sha256:8a4fdd8936eba2512e9c85df320a37e694c93945b33ef33c89946a340a238557"},
     {file = "Flask-1.1.2.tar.gz", hash = "sha256:4efa1ae2d7c9865af48986de8aeb8504bf32c7f3d6fdc9353d34b21f4b127060"},
+]
+goodreads-quotes = [
+    {file = "goodreads_quotes-0.1.0.linux-i686.tar.gz", hash = "sha256:ade11bc6ae153fb350e0771192903e68db16a1900c2d5f72a9db1bba9e3a1b4f"},
+    {file = "goodreads_quotes-0.1.0.tar.gz", hash = "sha256:c405c3cb2071d85e763501ba653c306ad04be0d344e754f6ec538c82ef1ecefa"},
 ]
 googletrans = [
     {file = "googletrans-3.0.0.tar.gz", hash = "sha256:44caeea42d91ff6ead5c2d49db2b88de66c45c2fe874c8ec03eb9b4ceb3a533d"},
